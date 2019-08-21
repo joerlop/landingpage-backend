@@ -6,6 +6,7 @@
   "author": "joerlop <jj.erlich155@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node index.js",
     "server": "nodemon index.js"
   },
   "dependencies": {

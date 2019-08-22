@@ -2,7 +2,8 @@ const db = require('../database/dbConfig.js');
 
 module.exports = {
   add,
-  find
+  find,
+  findByEmail
 };
 
 function find() {
@@ -11,4 +12,8 @@ function find() {
 
 function add(email) {
   return db('emails').insert(email);
+}
+
+function findByEmail(email) {
+  return db('emails').where(email).first();
 }
